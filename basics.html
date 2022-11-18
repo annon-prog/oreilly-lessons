@@ -1,0 +1,115 @@
+<!-- Mark up means we declare what we present to a user not how we present it. It is considered a 
+to be a markup lanuage and not a programming language since it has no logic.-->
+
+<!-- Basic structure of a html element
+ Opening tags: <element>
+      Content in between and 
+Closing tags(same structure as the opening tag + a forward slash): </element>
+          <element> content </element>
+      -->
+      <!-- Void elements are element that have self closing tags e.g. <img>, <meta>
+      <link> and <input>
+-->
+
+<!--creating  a simple html page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hello!</title>
+</head>
+<body>
+<h1>Hello World!</h1>
+<p>This is a simple paragraph.</p>
+<!--Tag Meaning
+<!DOCTYPE>
+Defines the HTML version used in the document. In this case it is HTML5. It is case insensitive.
+<html>
+Opens the page. No markup should come after the closing tag (</html>). The lang attribute declares
+the primary language of the page using the ISO language codes (en for English).
+<head>
+Opens the head section, which does not appear in the main browser window but mainly contains
+information about the HTML document, called metadata. It can also contain imports from external
+stylesheets and scripts. The closing tag is </head>.
+<meta>
+Gives the browser some metadata about the document. The charset attribute declares the character
+encoding. Modern HTML documents should always use UTF-8, even though it is not a requirement. In
+HTML, the <meta> tag does not require a closing tag.
+<title>
+The title of the page. Text written between this opening and the closing tag (</title>) will be
+displayed on the tab of the page or in the title bar of the browser.
+<body>
+Opens the part of the document displayed to users, i.e. all the visible or audible content of a page. No
+content should be added after the closing tag
+.<h1>
+A level 1 heading for the page.
+HTML has six levels of headings
+<h1> to <h6>
+<p> Represents a common paragraph of text.
+      There should be one <h1> element in an atricle and several h2 -h6 headings going down a
+hierachal layer if possible -->
+      <h1>Bigger font</h1>
+      <h2>Sort of big font</h2>
+      <h3>Big font</h3>
+      <h4>Medium font</h4>
+      <h5>Small font</h5>
+      <h6>Little font</h6>
+      <!--paragraphs
+      <p>:defines a paragraph
+      <br>: inserts a single line break
+      <pre>: defines preformatted text-->
+ <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque recusandae, voluptates soluta voluptatem odio iste optio beatae veritatis impedit in iusto nisi nesciunt cumque dolorum maiores reprehenderit quasi hic numquam!</p>
+   <br>
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus ducimus facere omnis, nobis doloremque repellendus quam perferendis a eos! Libero eum nobis velit tempore excepturi dolor totam qui sapiente?</p>
+     <br>
+     <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure reiciendis natus veritatis. Tempora porro exercitationem, enim beatae nobis temporibus quod explicabo nam repellat dolore in ipsum odit dolorum commodi a.</pre>
+<!--With HTML, you cannot change the output by adding extra spaces or extra lines in your HTML code.
+The browser will remove any extra spaces and extra lines when the page is displayed:-->
+<p>This    is another    paragraph, extra    spaces will be removed    by browsers</p>
+
+<!--Text formatting:
+The <mark> element is used to highlight a specific part of a text.-->
+      <p> This is a <mark>highlighted</mark> text.</p>
+
+<!-- We use the <strong> or <b> element to show bold text(If you were to use <b> a text-to-speech program would not say the word(s) any differently than any of the other
+words around it - you are simply drawing attention to them without adding any additional importance. By using
+<strong>, though, the same program would want to speak those word(s) with a different tone of voice to convey
+that the text is important in some way.)-->
+
+<p> This is a <strong>Bold</strong> text.</p>
+<p> This is a <b>Bold</b> text.</p>
+
+<!--To italicize words, we use the <em> or <i> tags-->
+      
+<p> This is an <em>italicized</em> text.</p>
+<p> This is an <i>italicized</i> text.</p>
+<!--We use the <u> tag to underline text-->
+<p> This is an <u>underlined</u> text.</p>
+<!--We use the <abbr> tag to show abbreviated text-->
+<p> This is an <abbr title="abbreviated">abb.</abbr> text.</p>
+<!--The title attribute is used to give the full desription of the abbreviated text-->
+
+<!--To mark text as inserted, we use the <ins> tag -->
+      <p>This is an <ins> inserted</ins> text.</p>
+
+<!--To mark deleted text, we use the <del> tag-->
+      <p> This is a <del>deleted</del> text.</p>
+<!--To strike through a text, we use the <s> tag-->
+            <p> This is a text with a <s>strike through.</s></p>
+<!--to write a superscript text, we use a <sup> tag while subscript text uses the 
+      <sub> tag-->
+      <p>log <sup>2</sup> <sub>10</sub></p>
+
+<!-- anchors and hypertags
+Href: It specifies the destination address. It could either be relative or absolute.
+An absolute href attribute points to a specific url on a website while a relative attribute
+ points to a specific working directory and/or a document inside the diectory
+Href lang: It specifies the language used in the resource being linked.
+Rel: it specifies the relationship between the current document and the linked document.
+Target: specifies where the link should be opened e.g.,a new browser. Possible values include_blank,_self,
+_parent,_top etc.
+Download: specifies that the file or document can e downloaded using that particular link.
+Title:Gives a decription of the link. -->
+
+</body>
+</html>
