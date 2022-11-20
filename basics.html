@@ -18,9 +18,10 @@ Closing tags(same structure as the opening tag + a forward slash): </element>
 <meta charset="UTF-8">
 <title>Hello!</title>
 </head>
-<body>
-<h1>Hello World!</h1>
-<p>This is a simple paragraph.</p>
+<body style="background-color:black;color:aqua;">
+      <h2 id="heading1">Chapter one </h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, commodi iure at delectus velit illum aliquam obcaecati molestias incidunt inventore sapiente corporis assumenda ex, placeat architecto voluptates, quam quo nemo.</p>
+<hr>
 <!--Tag Meaning
 <!DOCTYPE>
 Defines the HTML version used in the document. In this case it is HTML5. It is case insensitive.
@@ -54,6 +55,7 @@ hierachal layer if possible -->
       <h4>Medium font</h4>
       <h5>Small font</h5>
       <h6>Little font</h6>
+      <hr>
       <!--paragraphs
       <p>:defines a paragraph
       <br>: inserts a single line break
@@ -65,10 +67,12 @@ hierachal layer if possible -->
      <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure reiciendis natus veritatis. Tempora porro exercitationem, enim beatae nobis temporibus quod explicabo nam repellat dolore in ipsum odit dolorum commodi a.</pre>
 <!--With HTML, you cannot change the output by adding extra spaces or extra lines in your HTML code.
 The browser will remove any extra spaces and extra lines when the page is displayed:-->
+<br>
 <p>This    is another    paragraph, extra    spaces will be removed    by browsers</p>
 
 <!--Text formatting:
 The <mark> element is used to highlight a specific part of a text.-->
+      <hr>
       <p> This is a <mark>highlighted</mark> text.</p>
 
 <!-- We use the <strong> or <b> element to show bold text(If you were to use <b> a text-to-speech program would not say the word(s) any differently than any of the other
@@ -110,6 +114,185 @@ Target: specifies where the link should be opened e.g.,a new browser. Possible v
 _parent,_top etc.
 Download: specifies that the file or document can e downloaded using that particular link.
 Title:Gives a decription of the link. -->
+<hr>
+
+<a>  The a tag is an anchor tag element</a>
+<!--example of an anchor tag-->
+<a href="https://google.com/">This is a link to Google.</a>
+<!--To show that it is a link that leads to an external website,we use the external link type-->
+  <a href="https://youtube.com" rel="external">This is a link leading to youtube.</a>
+  <!--file transfer protocol(FTP), hypertext transfer protocol(http).
+Anchor tags can be used to jump to specific parts on a website by using an id attribute
+They can also be used to link one web page to the other using the name of a web page-->
+
+
+<p>See<a href="#heading1"> chapter one </a> for more context.</p>
+<p> This  leads to <a href="index.html">another page</a></p>
+
+<!--Lists: We have three main types of lists: ordered lists,unordered lists and description lists.-->
+<!--We use <ol> for ordered lists-->
+      <hr>
+      <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+      </ol>
+     <hr>
+      <!--We can manually change the numbers using the start attribute-->
+      <ol start="3">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>    
+      </ol>
+      <!--We can also explicitly set a certain list item to a specific number using the value atttribute. Further list items after one with a specified value
+will continue incrementing by one from that list item's value, ignoring where the parent list was at.-->
+<hr>
+<ol>
+      <li>Item 1</li>
+      <li value="9">Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+</ol>
+<hr>
+<ol start="5">
+      <li>Item</li>
+      <li>Some Other Item</li>
+      <li value="4">A Reset Item</li>
+      <li>Another Item</li>
+      <li>Yet Another Item</li>
+      </ol>
+<hr>
+<!--we can reverse the numbering by adding reversed in our ol element-->
+<ol reversed>
+<li>Item</li>
+<li>Some Other Item</li>
+<li value="4">A Reset Item</li>
+<li>Another Item</li>
+<li>Yet Another Item</li>
+<li> First item</li>
+</ol>
+<hr>
+<!--We can change the type of numeral using the numeral attribute.-->
+
+<ol type="a">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+</ol>
+<ol type="I">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+</ol>
+<hr>
+<!--We create an unordered list using the <ul> tag and each list item is created using the <li> tag-->
+      <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+      </ul>
+      <!--Nested list-->
+      <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <ul>
+                  <li>Sub-item 1</li>
+                  <li>Sub-item 2</li>
+                  <li>Sub-item 3</li>
+            </ul>
+      </ol>
+      <hr>
+      <!--We create a description list using the dl element, the name element is given dt and the value element 
+      is given the dd element-->
+      <dl>
+            <dt>Chapter one</dt>
+            <dd>This chapter deals with the basics of programming.</dd>
+            <dd>It also explains the prerequisites and gives a roadmap to follow.</dd>
+      </dl>
+      <dl>
+            <dt>Chapter two</dt>
+            <dd>This chapter deals with the basics of html and css.</dd>
+            <dd>It also gives a clear roadmap to become a front end developer.</dd>
+            <dd>Learn Html and Css first then get  deep understanding on javascript and finally get
+       some libraries and frameworks for css and javascript that will help make it easier to code.
+            </dd>
+      </dl>
+      <hr>
+      <!--Tables:We can display tabular data in a two dimensional format(rows and columns) using html.-->
+      <table>
+            <tr>
+                  <th>First column</th>
+                  <td>one</td>
+                  <td>two</td>
+                  <td>three</td>
+            </tr>
+            <tr>
+                  <th>Second column</th>
+                  <td>four</td>
+                  <td>five</td>
+                  <td>six</td>
+            </tr>
+            <tr>
+                  <th>Third column</th>
+                  <td>seven</td>
+                  <td>eight</td>
+                  <td>nine</td>
+            </tr>
+            <tr>
+                  <th>Fourth column</th>
+                  <td>ten</td>
+                  <td>eleven</td>
+                  <td>twelve</td>
+            </tr>
+      </table>
+      <hr>
+      <!--We can span the rows and columns using the colspan and rowspan attributes to our td and tr-->
+      <table>
+            <tr>
+                  <th rowspan="3">First column</th>
+                  <td>one</td>
+                  <td>two</td>
+                  <td>three</td>
+            </tr>
+            <tr>
+                  <th colspan="2">Second column</th>
+                  <td>four</td>
+                  <td>five</td>
+                  <td>six</td>
+            </tr>
+            <tr>
+                  <th>Third column</th>
+                  <td>seven</td>
+                  <td rowspan="2">eight</td>
+                  <td>nine</td>
+            </tr>
+            <tr>
+                  <th>Fourth column</th>
+                  <td colspan="3">ten</td>
+                  <td>eleven</td>
+                  <td>twelve</td>
+            </tr>
+      </table>
+      <hr>
+      <!--We can group columns together using the colgroup element-->
+      <table>
+            <colgroup>
+            <col id="MySpecialColumn" />
+            <col />
+            </colgroup>
+            <colgroup>
+            <col class="CoolColumn" />
+            <col class="NeatColumn" span="2" />
+            </colgroup>
+            </table>
+      <!--table using,thead,tbody,tfoot and caption-->
+       
 
 </body>
 </html>
